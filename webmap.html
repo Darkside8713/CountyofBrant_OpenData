@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- other.html -->
+<!-- Authors: Will Inglis, Grace Kim, Esther Kim-->
+<!-- Date Created: Apr 01, 2022 -->
+<!-- GEOM 99 Group Project Metrolinx -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="Image/jpg" href="image/Metro.jpg">
+        <title>Dashboards</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <!-- Navigation Bar -->
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo"><strong>Metrolinx Climate Resilience</strong></div>
+		<ul class="links">
+			<li><a href="index.html">The Problem</a><li>
+			<li><a href="methodology.html">Methodology</a><li>
+		<div class="services list1">
+		<a href="#">The Solution</a>
+              <!-- Dropdown Menu -->
+              <ul class="dropdown-content">
+		          <li class="list2"><a href="webmap.html">Web Map</a></li>
+                  <li class="list2"><a href="storymaps.html">StoryMaps</a></li>
+                  <li class="list2"><a href="experiencebuilder.html">Experience Builder</a></li>
+              </ul>
+		</div>
+			<li><a href="aboutus.html">The Team</a><li>
+		</ul>
+		<label for="nav-toggle" class="icon-burger">
+               	<span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+		</label>
+        </nav>
+        
+	<!-- Main Content -->
+        <main>
+             <!-- Web Map Content -->
+            <section>
+                <h1 class="storymapH1"> Creating a web map to deploy on ArcGIS Online products </h1> 
+		    <h2 class="storymapH2"> From ArcGIS Pro to ArcGIS Online </h2>
+		    <p class="storymapfont"> Before creating AGOL products, it is necessary to create an appropriate web map. To achieve this, layers downloaded from Metrolinx and Ontario Climate Change Portal were imported into ArcGIS Pro and spatially joined. The resulting output was then shared as a feature layer on ArcGIS Online, where the process of configuring a web map commenced. </p>
+		
+		    <img src="image/webmap2_1940_1000.png" alt="focus" class="responsive">
+		    
+		    <h2 class="storymapH2"> Symbolizing on ArcGIS Web Map Viewer </h2>
+		    <p class="storymapfont"> ArcGIS Web Map Viewer offers a variety of ways to symbolize the data at hand. For this project, we wanted to user to be able to distinguish between "Exisiting" and "Proposed" stations. These symbols will also be further explained by the interactive legend in our <a href="storymaps.html" class="storyexp">StoryMap</a>.
+		    
+	            <img src="image/webmap3_1940_1000.png" alt="focus" class="responsive">
+	            <h2 class="storymapH2"> Configuring the popup </h2>
+		    <p class="storymapfont"> At first, the default popup was set as the field and their associated values. These values are not very helpful to the user without some context. We used Arcade within the popup configuration option in Web Map Viewer to make a popup that is more informative. It also summarizes some of the concerns that Metrolinx has outlined in their 2017 report. 
+		    <img src="image/webmap4_1940_1000.png" alt="focus" class="responsive">
+		    <h2 class="storymapH2"> The final product and our thoughts</h2>
+		    <p class="storymapfont"> Overall,  the utilization of ArcGIS Pro and ArcGIS Web Map Viewer proved to be effective in establishing a strong foundational map for our ArcGIS Online products. ArcGIS Pro's spatial analysis tool box allowed us to merge different feature classes together to create one robust feature layer that can be published on ArcGIS Online. The Web Map Viewer helped to make the final output to be more user friendly, as well as integrate some symbology. </p>
+		    
+		    <a href="https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=18527f59168945de8711e593ce8c2a81" class="buttonlink">See Web Map</a>
+		
+		</section>
+            <!--Back to Top Button-->
+            <div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            </div>
+        <script src="script.js"></script> <!-- Call in script.js for functions-->
+        <script>
+    
+            // Get the button:
+            let mybutton = document.getElementById("myBtn");
+    
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+    
+        </script>
+        </main>
+	    
+        <!-- Footer -->
+        <footer>
+            <p id="footer">Copyright &#169; Metrolinx Team. All Right Reserved.</p>
+        </footer>
+    </body>
+</html>

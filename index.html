@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Authors: Will Inglis, Grace Kim, Esther Kim-->
+<!-- Date Created: Apr 01, 2023 
+     Last Modified: April 13th, 2023 -->
+<!-- GEOM99 Group Project - Metrolinx -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="Image/jpg" href="image/Metro.jpg">
+        <title>Metrolinx</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> <!--currently added unused types as well-->
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo"><strong>Metrolinx Climate Resilience</strong></div>
+		<ul class="links">
+			<li><a href="index.html">The Problem</a><li>
+			<li><a href="methodology.html">Methodology</a><li>
+		<div class="services list1">
+		<a href="#">The Solution</a>
+              <!-- Dropdown Menu -->
+              <ul class="dropdown-content">
+		          <li class="list2"><a href="webmap.html">Web Map</a></li>
+                  <li class="list2"><a href="storymaps.html">StoryMaps</a></li>
+                  <li class="list2"><a href="experiencebuilder.html">Experience Builder</a></li>
+              </ul>
+		</div>
+			<li><a href="aboutus.html">The Team</a><li>
+		</ul>
+		<label for="nav-toggle" class="icon-burger">
+               	<span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+		</label>
+        </nav>
+        <div class="containerb"> 
+            <img class="banner" src="image/Metrolinx.gif" alt="Metrolinx Logo">
+	    </div>
+
+        <!-- Content  -->
+        <main>
+            <section>
+                    <h1 id="mainTitle">Metrolinx Train Stations and the effects of Climate Change </h1>
+            </section>
+            <section>
+                    <h1>Problem Statement</h1>
+                    <h2>Ideal</h2>
+                    <p>Interesting and interactive way of viewing a summary of Metrolinx's report on the effects of climate change on train stations </p>
+                    <h2>Reality</h2>
+                    <p>Although Metrolinx has tried to communicate the problem to the general public through a 70 page report, this is not the best way to communicate such problem.</p>
+                    <h2>Consequences</h2>
+                    <p>The public does not want to read a long report on how climate change can effect train stations, so the public is not aware of the issues related to climate change on transit systems</p>
+                    <h2>Proposal</h2>
+                    <p>To create an interactive tool, accessible online, that shares the climate challenges on train stations raised by Metrolinx in a user-friendly way. </p>
+                    <h2>Technology to be Used</h2>
+                    <p>ArcHub, Map Viewer, ArcGIS Developers, Web app builder, ArcGIS Online ecosystem</p>
+            </section>
+            <section>
+                <h1>How it Went - The Solution</h1>
+                <p>In the end, we were able to create possible tools to share knowledge about Metrolinx train stations and their vulnerability to the 
+                    changing climate. Our focus was on utilizing ArcGIS products to create our solution, and although we had intended on using ArcGIS Hub, 
+                    our inability to do so led us to other tools that could provide an interactive and accessible application. 
+                </p>
+                <p>Take a look at what we found.</p>
+            </section>
+    <section>
+        <div class="container2">
+            <div class="center">
+                <h1>Our Solutions involve</h1>
+                <ul>
+                    <p>Configuration through a Web Map</p>
+                </ul>
+                <a href="https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=18527f59168945de8711e593ce8c2a81" class="buttonlink">See Web Map</a>
+                <ul>
+                    <p>The narrative through a StoryMap</p>
+                </ul>
+                <a href="https://storymaps.arcgis.com/stories/4361d4a3d1424b6f8e116a7d0c1d65b6" class="buttonlink">See StoryMap</a>
+                <ul>
+                    <p>Interaction with an Experience Builder</p>
+                </ul>
+                <a href="https://experience.arcgis.com/experience/2a10bd80f10f4fd9a3a12a705a87f144" class="buttonlink">See Experience Builder</a>
+    
+            </div>
+    
+            <!--Back to Top Button-->
+            <div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script> <!-- Call in script.js for functions-->
+    <script>
+
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+    </script>
+            </main>
+        <!-- Footer -->
+        <footer>
+            <p id="footer">Copyright &#169; Metrolinx Team. All Right Reserved</p>
+        </footer>
+    </body>
+</html>
