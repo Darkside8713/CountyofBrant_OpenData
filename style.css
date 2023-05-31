@@ -97,7 +97,7 @@ nav {
 nav .logo {
 	float: left;
 	width: 40%;
-	height: 50%;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	font-size: 26px;
@@ -106,9 +106,9 @@ nav .logo {
 
 nav .picture {
 	float: left;
-  margin: 10px;
+  margin: 50px;
 	width: 40%;
-	height: 50%;
+	height: 90%;
 	display: flex;
 	align-items: center;
 }
