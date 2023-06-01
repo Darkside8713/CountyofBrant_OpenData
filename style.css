@@ -268,7 +268,7 @@ display: block;
 
 .nameid{
   font-size: 1.33rem;
-  color:#ffffff;
+  color:black;
   font-style: bold;
 }
 
@@ -385,7 +385,7 @@ display: block;
   max-width: 65ch;
 }
 #textColour {
-  color: #ebf2f7;
+  color: black;
 }
 #mainTitle {
   font-weight: 300;
