@@ -272,6 +272,12 @@ display: block;
   font-style: bold;
 }
 
+.gisappspec{
+  font-size: 1rem;
+  color:black;
+  font-style: italic;
+}
+
  .background1 {
     background: #8896a9;
  }
