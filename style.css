@@ -267,14 +267,14 @@ display: block;
 /* CSS for About us Page */
 
 .nameid{
-  font-size: 1.33rem;
+  font-size: 2rem;
   color:black;
   font-style: bold;
 }
 
 .gisappspec{
   font-size: 1rem;
-  color:black;
+  color:rgb(44, 44, 44);
   font-style: italic;
 }
 
