@@ -266,6 +266,12 @@ display: block;
 
 /* CSS for About us Page */
 
+#aboutus{
+  font-size: 4rem;
+  color:rgb(0, 0, 0);
+  font-style: bold;
+}
+
 #whoarewe{
   font-size: 2rem;
   color:black;
