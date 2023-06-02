@@ -62,19 +62,19 @@ footer {
     font-size: 0.8em;
 }
 
-  .center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .responsive{
-    max-width: 100%;
-    height:auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.responsive{
+   max-width: 100%;
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
 /* nav bar */
 body {
