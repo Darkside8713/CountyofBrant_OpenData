@@ -266,19 +266,19 @@ display: block;
 
 /* CSS for About us Page */
 
-.whoarewe{
+#whoarewe{
   font-size: 2rem;
   color:black;
   font-style: bold;
   text-decoration: underline;
 }
-.nameid{
+#nameid{
   font-size: 20em;
   color:black;
   font-style: bold;
 }
 
-.gisappspec{
+#gisappspec{
   font-size: 1rem;
   color:rgb(44, 44, 44);
   font-style: italic;
