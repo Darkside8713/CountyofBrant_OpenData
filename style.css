@@ -273,13 +273,13 @@ display: block;
   text-decoration: underline;
 }
 #nameid{
-  font-size: 3.5rem;
+  font-size: 3rem;
   color:black;
   font-style: bold;
 }
 
 #gisappspec{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color:rgb(44, 44, 44);
   font-style: italic;
 }
