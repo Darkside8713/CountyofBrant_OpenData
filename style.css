@@ -336,14 +336,14 @@ display: block;
     font-size: 1rem;
     border: none;
     color: #f9fbfc;
-    background: #4d596a;
+    background: #1E1A10;
     cursor: pointer;
     border-radius: 50px;
  }
   
  button:hover {
     background: #fff;
-    color: #4d596a;
+    color: #1E1A10;
  }
   
 /* StoryMap specific css */
