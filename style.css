@@ -258,7 +258,9 @@ display: block;
 
 /* end of nav bar*/		
 
-/*banner for index page*/
+/*Start of Banners*/
+
+/*Banner for index page*/
 .containerb {
 	position: relative;
 	margin-top: 100px;
@@ -271,7 +273,7 @@ display: block;
   opacity: 0.6;
 }
 
-/*banner for methodology page*/
+/*Banner for methodology page*/
 .containera{
 	position: relative;
 	margin-top: 100px;
@@ -283,7 +285,7 @@ display: block;
   width: 100%;
   opacity: 0.6;
 }
-/* End of banner*/
+/* End of banners*/
 
 /* CSS for About us Page */
 
