@@ -270,6 +270,19 @@ display: block;
   width: 100%;
   opacity: 0.6;
 }
+
+/*banner for methodology page*/
+.containera{
+	position: relative;
+	margin-top: 100px;
+  
+}
+.containera img{
+  display: block;
+  height: 500px;
+  width: 100%;
+  opacity: 0.6;
+}
 /* End of banner*/
 
 /* CSS for About us Page */
