@@ -14,7 +14,7 @@ dark gray - #1E1A108
 html, body {
     background: whitesmoke;
     /* Font source: https://fonts.google.com/specimen/Roboto */
-    font-family: "Avenir Next","Avenir","Helvetica Neue",sans-serif;
+    font-family: 'Open Sans','Lato',"Avenir Next","Avenir","Helvetica Neue",sans-serif;
     height: 100%;
     letter-spacing: 1px;
     margin: 0;
@@ -36,6 +36,9 @@ main{
 }
 section{
     padding-bottom: 20px;
+}
+h1, h2, h3 {
+  font-family: "Lato";
 }
 h1{
     color: black;
@@ -91,14 +94,19 @@ body {
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 	position: fixed; 
 	z-index: 10;
 	left: 0;
 	right: 0;
 	top: 0;
-	padding: 0 5%;
-	height: 100px;
-	background-color: #173158
+	/* padding: 0 5%; */
+	height: 50px;
+	/* background-color: #173158 */
+  /* background-color: #f9fbfc; */
+  background-color: whitesmoke;
 }
 /* Change colour in "About Us" page */
 .otherNav {
@@ -106,12 +114,13 @@ nav {
 }
 nav .logo {
 	float: left;
-	width: 40%;
-	height: 100%;
+	/* width: 40%;
+	height: 100%; */
 	display: flex;
 	align-items: center;
-	font-size: 26px;
-  color: #f9fbfc;
+	font-size: 20px;
+  /* color: #f9fbfc; */
+  color: #173158;
 }
 
 nav .picture {
@@ -142,8 +151,9 @@ nav .links a {
 	display:block;
 	padding: .5em;
 	font-size: 18px;
-	font-weight: 300;
-  color: #f9fbfc;
+	/* font-weight: 300; */
+  /* color: #f9fbfc; */
+  color: #173158;
 	text-decoration: none;
 }
 /* Change background colour when hovering over link */
@@ -169,7 +179,8 @@ nav .icon-burger {
 nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
-	background-color: #fff;
+	/* background-color: #fff; */
+  background-color: #173158;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
@@ -185,18 +196,21 @@ nav .icon-burger .line {
 		justify-content: center;
 	}
 	nav .links{
-		float: none;
+		/* float: none; */
 		position: fixed;
 		z-index: 9;
 		left: 0;
 		right: 0;
-		top: 100px;
+		/* top: 100px; */
+    top:90px;
 		bottom: 100%;
 		width: auto;
-		height: auto;
+    height: auto;
+    display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
-		background-color: rgba(0,0,0,.8);
+		/* justify-content: space-evenly; */
+		/* background-color: rgba(0,0,0,.8); */
+    background-color: rgb(255,255,255,.8);
 		overflow: hidden;
 		transition: all .5s ease-in-out;
 	}
@@ -204,7 +218,10 @@ nav .icon-burger .line {
 		font-size: 20px;
 	}
 	nav :checked ~ .links {
-		bottom: 0;
+		/* bottom: 0; */
+    width: 100%;
+		height:fit-content;
+    /* height: 100%; */
 	}
 	nav .icon-burger {
 		display: block;
@@ -222,15 +239,16 @@ nav .icon-burger .line {
 
 /* DROPDOWN MENU */
 
-.services {
+/* .services {
 position: relative;
-}
+} */
 
 /* Dropdown content (hidden by default)*/
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #173158;
+  /* background-color: #173158; */
+  background-color: rgb(255,255,255,.8);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -246,12 +264,15 @@ width: 8em;
 text-align: center;
 }
 
-.dropdown-content li:hover {
-background-color: #173158;
-}
-
-.services:hover .dropdown-content {
+.services:hover > .dropdown-content {
 display: block;
+}
+.services, .dropdown-content {
+  padding: 0;
+  list-style-type: none;
+}
+.inner-dropdown {
+  padding: 0.5em 1em;
 }
 
 /*RESPONSIVE NAVBAR MENU*/
