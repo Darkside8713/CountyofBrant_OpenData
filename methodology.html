@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation Bar -->
@@ -24,7 +25,7 @@
 		<ul class="links">
 			<li><a href="index.html">Home</a><li>
 			<li><a href="methodology.html">Methodology</a><li>
-            <li class="services"><a href="webmap.html">Products</a>
+            <li class="services"><a href="other.html">Products</a>
                 <!-- Dropdown Menu -->
                 <ul class="dropdown-content">
                     <li><a href="webmap.html">Web Maps</a></li>
@@ -51,7 +52,7 @@
         <!-- Main Content -->
         <main>
             <section>
-                    <h1 id="mainTitle">The General Methodology</h1>
+                    <h1>The Methodology</h1>
             </section>
             <section>
                     <h2>Data Preparation</h2>
@@ -70,8 +71,37 @@
                         are a simple and effective way to share data in a straightforward, user-friendly method.
                     </p>
                     <h2>Technology Used</h2>
+                    <div class="image-container">
+                        <div class="containImage">
+                            <img src="image\brant.jpg" alt="EDIT." class="responsive">
+                            <p class="containerText">sample image use.</p>
+                        </div>
+                        <div class="containImage">
+                            <img src="image\brant.jpg" alt="EDIT.">
+                            <p class="containerText">sample image use.</p>
+                        </div>
+                        <div class="containImage">
+                            <img src="image\brant.jpg" alt="EDIT.">
+                            <p class="containerText">sample image use.</p>
+                        </div>
+                    </div>
                     <p>ArcGIS Pro, ArcGIS Web Map, ArcGIS StoryMaps, ArcGIS Experience Builder</p>
             </section>
+        </section>
+        <!--Back to Top Button-->
+        <div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+        <script src="script.js"></script> <!-- Call in script.js for functions-->
+        <script>
+
+            // Get the button:
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+        </script>
         </main>
         <!-- Footer -->
         <footer>

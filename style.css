@@ -6,6 +6,7 @@
 Colours: 
 green - #006631
 light green - #81B499
+lighter green - #D9E8E0 - nav hover
 darkblue - #173158
 white - #FFFFFF
 dark gray - #1E1A108
@@ -14,7 +15,7 @@ dark gray - #1E1A108
 html, body {
     background: whitesmoke;
     /* Font source: https://fonts.google.com/specimen/Roboto */
-    font-family: 'Open Sans','Lato',"Avenir Next","Avenir","Helvetica Neue",sans-serif;
+    font-family: 'Open Sans','Montserrat','Lato',"Avenir Next","Avenir","Helvetica Neue",sans-serif;
     height: 100%;
     letter-spacing: 1px;
     margin: 0;
@@ -23,32 +24,27 @@ html, body {
 }
 
 main{
-    padding-top: 2%;
+    padding-top: 4%;
     padding-bottom: 10%;
     padding-left: 15%;
     padding-right: 15%;
 }
-/* To make sure Methodology page headers do not get covered by bar */
-@media (max-width: 1000px) {
-  main {
-    padding-top: 105px;
-  }
-}
+
 section{
     padding-bottom: 20px;
 }
-h1, h2, h3 {
-  font-family: "Lato";
+h1, h2, h3, h4 {
+  font-family: "Montserrat";
 }
 h1{
     color: black;
     text-align: center;
-    font-weight: 500;
-    font-size: 2.2em;
+    font-weight: 600;
+    font-size: 2.8em;
 }
 h2{
-    color: #a3a8ac;
-    font-weight: 100;
+    color: #36454F;
+    font-weight: 500;
     font-size: 1.8em;
 }
 h3 {
@@ -56,11 +52,17 @@ h3 {
     font-weight: 500;
     font-size: 1.3em;
 }
+h4{
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+}
 p {
-    color: darkgrey;
-    text-align: center;
+    color: #36454F;
+    text-align: justify;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
 }
 footer {
     background-color: #111212; /*Refresh Black*/
@@ -151,14 +153,16 @@ nav .links a {
 	display:block;
 	padding: .5em;
 	font-size: 18px;
-	/* font-weight: 300; */
+	font-weight: 500;
   /* color: #f9fbfc; */
   color: #173158;
 	text-decoration: none;
 }
 /* Change background colour when hovering over link */
 nav .links a:hover {
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  /* background-color: #81b499; */
+  background-color: #D9E8E0;
   border-radius: 5px;
 }
 
@@ -180,7 +184,8 @@ nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
 	/* background-color: #fff; */
-  background-color: #173158;
+  /* background-color: #173158; */
+  background-color: #006631;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
@@ -210,7 +215,7 @@ nav .icon-burger .line {
 		flex-direction: column;
 		/* justify-content: space-evenly; */
 		/* background-color: rgba(0,0,0,.8); */
-    background-color: rgb(255,255,255,.8);
+    background-color: rgb(255,255,255,.85);
 		overflow: hidden;
 		transition: all .5s ease-in-out;
 	}
@@ -235,8 +240,18 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
+  #picturetext1 {
+    font-size: 3.5em !important;
+  }
+  #picturetext2 {
+    font-size: 1.5em !important;
+  }
 }
-
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
 /* DROPDOWN MENU */
 
 /* .services {
@@ -248,7 +263,7 @@ position: relative;
   display: none;
   position: absolute;
   /* background-color: #173158; */
-  background-color: rgb(255,255,255,.8);
+  background-color: rgb(255,255,255,.85);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -284,14 +299,19 @@ display: block;
 /*Banner for index page*/
 .containerb {
 	position: relative;
-	margin-top: 100px;
-  
+	margin-top: 90px;
+  overflow: hidden;
+  height:auto;
+  width: 100%;
 }
 .containerb img{
   display: block;
-  height: 750px;
+  height:auto;
   width: 100%;
   opacity: 0.6;
+  min-height: 600px;
+  max-height: 780px;
+  object-fit: cover;
 }
 
 /*Banner for methodology page*/
@@ -312,32 +332,35 @@ display: block;
 /* CSS for About us Page */
 
 #aboutus{
-  font-size: 4rem;
+  font-size: 3rem;
   color:rgb(0, 0, 0);
-  font-style: bold;
   padding-bottom: 50px;
+  font-weight: 500;
 }
 
 #whoarewe{
   font-size: 2rem;
   color:black;
-  font-style: bold;
+  font-weight: 500;
   text-decoration: underline;
 }
-#nameid{
-  font-size: 3rem;
+.nameid{
+  font-size: 2rem;
   color:black;
-  font-style: bold;
+  font-weight: 500;
+  text-align: center;
 }
 
-#gisappspec{
-  font-size: 1.5rem;
+.gisappspec{
+  font-size: 1.25rem;
   color:rgb(44, 44, 44);
   font-style: italic;
+  text-align: center;
 }
 
 .aboutourself{
   color: rgb(70, 70, 70);
+  text-align: center;
 }
 
  .background1 {
@@ -364,8 +387,8 @@ display: block;
 
 .center p {
   margin-bottom: 2rem;
-  font-size: 1.3rem;
-  line-height: 1.3;
+  /* font-size: 1.3rem;
+  line-height: 1.3; */
 }
   
  button {
@@ -380,6 +403,7 @@ display: block;
   
  button:hover {
     background: #fff;
+    /* background: #81b499; */
     color: #1E1A10;
  }
   
@@ -414,7 +438,8 @@ display: block;
 }
 
 .buttonlink:hover, .buttonlink:active {
-  background-color: red;
+  background-color: #006631;
+  color: #f9fbfc;
 }
 
 .storyexp{
@@ -434,7 +459,7 @@ display: block;
   justify-items: center;
   justify-content: center;
   grid-auto-flow: column;
-  gap: 1em;
+  /* gap: 1em; */
 }
 @media screen and (max-width: 1150px) {
   .image-container-row {
@@ -443,10 +468,12 @@ display: block;
 }
 .containImage {
   max-width: 100%;
+  height: 100%;
   padding: 2%;
-  display: grid;
-  justify-items: center;
-
+  /* display: grid;
+  justify-items: center; */
+  /* object-fit: scale-down; */
+  object-fit: contain;
 }
 .containerText {
   text-align: center;
@@ -454,35 +481,50 @@ display: block;
 }
 #textColour {
   color: black;
+  font-weight: 300;
+  font-size: 1.8em;
 }
 #mainTitle {
-  font-weight: 300;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px black;
   top: 50%;
   left: 50%;
   font-size: 2.5em;
 }
 #picturetext1 {
-  position: absolute; 
-  top: 35%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
   color: white; 
   font-size: 5em;
-  color: black;
+  /* color: black; */
+  text-shadow: 4px 4px 10px black;
+  /* text-shadow: 4px 4px 10px white; */
+  font-weight: 700; 
 }
 
 #picturetext2 {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color: white; 
+  /* color: white;  */
   font-size: 2.5em;
   color: black;
+  /* text-shadow: 2px 2px 4px black; */
+  text-shadow: 4px 4px 10px white;
+  /* font-weight: 700; */
 }
 
 .countybrant img {
   display: block;
   margin: 0 auto;
   width: 50%;
+}
+.column {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+.column:after {
+  display: grid;
+  clear: both;
+  content: "";
+}
+.titleSpace {
+  padding-top: 100px;
 }
