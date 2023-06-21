@@ -81,6 +81,11 @@ footer {
   margin-right: auto;
 }
 
+.floatcenter{
+  display: flex;
+  justify-content: center;
+}
+
 .responsive{
    max-width: 100%;
   height:auto;
