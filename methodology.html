@@ -25,13 +25,13 @@
 		<ul class="links">
 			<li><a href="index.html">Home</a><li>
 			<li><a href="methodology.html">Methodology</a><li>
-            <li class="services"><a href="other.html">Products</a>
+            <li class="services"><a href="products.html">Products</a>
                 <!-- Dropdown Menu -->
-                <ul class="dropdown-content">
+                <!-- <ul class="dropdown-content">
                     <li><a href="webmap.html">Web Maps</a></li>
                     <li><a href="storymaps.html">StoryMaps</a></li>
                     <li><a href="other.html">Other</a></li>
-                </ul>
+                </ul> -->
             </li>
 			<li><a href="aboutus.html">Team</a><li>
 		</ul>
@@ -44,53 +44,37 @@
         <!-- Navigation Bar End -->
 
         <!-- Banner Start -->
-        <div class="containera">
+        <!-- <div class="containera">
             <img src="image/Methodology.jpg"  alt="Methodology">
-        </div>
+        </div> -->
         <!-- Banner End -->
         
         <!-- Main Content -->
         <main>
+            <div class="center titleSpace">
+                <h1>The Methodology</h1>
+            </div>
             <section>
-                    <h1>The Methodology</h1>
-            </section>
-            <section>
-                    <h2>Data Preparation</h2>
-                    <p>The data on the Metrolinx train stations were extracted from Metrolinc's website. Climate change data was necessary to create the information 
-                        to share with possible readers. This data was extracted from Ontario Climate Change Portal.
+                    <h2>Data Acquisition and Processing</h2>
+                    <p>The dataset to share on this open data portal was provided by the client through a geodatabase. Most fields were deemed necessary 
+                        and those that were sensitive to share in public were processed once they were loaded onto ArcGIS Online, by hiding them through the use of views. 
+                        Any additional modifications to public facing components (pop-ups, etc.) were modified through the map viewer through the published feature 
+                        layer or feature layer views.
                     </p>
-                    <h2>Testing the Tools</h2>
-                    <p>Our purpose was to share a report through an easy-to-read tool that users could interact with. For this purpose, a StoryMap was chosen to 
-                        share our "story". We had also intended to explore the use of ArcGIS Hub to deploy our map, however, we found it was not accessible to us at the moment. 
-                        This led us to considering the use of Web Apps or the Experience Builder. In the end we used Experience Builder, as we were informed that 
-                        Web Apps would be retiring in July 2024, affecting the accessibility of the tool.
+                    <p>Methods to automate the loading of data onto ArcGIS Online were explored through FME and python scripting. During observation through 
+                        ArcGIS Pro, many feature classes were found to have attachment tables connected through relationship classes. This area brought limitations 
+                        and left room to explore further. A python script was created to load, publish, and update feature layers through a path to a geodatabase. 
                     </p>
-                    <p>You may read further on the tools we have used under our solutions menu.</p>
-                    <h2>Final Products</h2>
-                    <p>The final products were found to be a possible solution to the problem at hand. Although their own limitations exist, ArcGIS web products 
-                        are a simple and effective way to share data in a straightforward, user-friendly method.
+                    <h2>Creating Applications using ArcGIS Online</h2>
+                    <p>Through research into existing examples and the literature, the application of datasets shared in an open data portal were found to be an important 
+                        part of engaging public users to data.</p>
+                    <p>A StoryMap..
                     </p>
-                    <h2>Technology Used</h2>
-                    <div class="image-container">
-                        <div class="containImage">
-                            <img src="image\brant.jpg" alt="EDIT." class="responsive">
-                            <p class="containerText">sample image use.</p>
-                        </div>
-                        <div class="containImage">
-                            <img src="image\brant.jpg" alt="EDIT.">
-                            <p class="containerText">sample image use.</p>
-                        </div>
-                        <div class="containImage">
-                            <img src="image\brant.jpg" alt="EDIT.">
-                            <p class="containerText">sample image use.</p>
-                        </div>
-                    </div>
-                    <p>ArcGIS Pro, ArcGIS Web Map, ArcGIS StoryMaps, ArcGIS Experience Builder</p>
-                    <h1>Testing h1</h1>
-                    <h2>Testing h2</h2>
-                    <h3>Testing h3</h3>
-                    <h4>Testing h4</h4>
-                    <p>testing p</p>
+                    <h2>Creating the Open Data Portal using ArcGIS Hub</h2>
+                    <p>ArcGIS Hub was used to create the public platform. Beyond the default configuration provided by the Hub, the design of the portal was 
+                        configured in hopes to stray away from the common visuals of open data portals created using ArcGIS Hub, while maintaining accessbility for its users. 
+                        This process required the use of HTML and CSS along with the editting settings provided through the platform. 
+                    </p>
             </section>
         </section>
         <!--Back to Top Button-->

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="Image/jpg" href="image/Brant_Icon.png">
+        <title>County of Brant - Open Data Portal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo"><strong>KI to Open Data</strong>
+                <!-- <img class="picture" src = image/brant.jpg alt=" Brant Logo"> -->
+            </div>
+		<ul class="links">
+			<li><a href="index.html">Home</a><li>
+			<li><a href="methodology.html">Methodology</a><li>
+            <li class="services"><a href="products.html">Products</a>
+                <!-- Dropdown Menu -->
+                <!-- <ul class="dropdown-content">
+                    <li><a href="webmap.html">Web Maps</a></li>
+                    <li><a href="storymaps.html">StoryMaps</a></li>
+                    <li><a href="other.html">Other</a></li>
+                </ul> -->
+            </li>
+			<li><a href="aboutus.html">Team</a><li>
+		</ul>
+		<label for="nav-toggle" class="icon-burger">
+               	<span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+		</label>
+        </nav>
+        <!-- Navigation Bar End -->
+        
+	<!-- Main Content -->
+        <main>
+            <div class="center titleSpace"><h1>The Final Products</h1></div>
+            <section>
+                <h2>ArcGIS StoryMap - Heritage Buildings?</h2>
+                <p>Take a look at our StoryMap using the link provided, the view below, or the screenshots beneath that. </p>
+                <a href="https://storymaps.arcgis.com/stories/9274d6af6d0b41b0ac322b58131aa427" class="buttonlink">See StoryMap</a>
+                <div><iframe class="linkFrame" src="https://storymaps.arcgis.com/stories/9274d6af6d0b41b0ac322b58131aa427" title="StoryMap" height="500"></iframe></div>
+                <div class="image-container">
+                    <div class="containImage">
+                        <img src="image\StoryMap1.png" alt="StoryMap title and header image." class="responsive">
+                        <p class="containerText">The title slide of the StoryMap.</p>
+                    </div>
+                    <div class="containImage">
+                        <img src="image\StoryMap2.png" alt="StoryMap - a brief history tab." class="responsive">
+                        <p class="containerText">'A brief history' section of StoryMap.</p>
+                    </div>
+                    <div class="containImage">
+                        <img src="image\StoryMap3.png" alt="StoryMap - explore the architecture tab." class="responsive">
+                        <p class="containerText">'Explore the architecture' section of StoryMap.</p>
+                    </div>
+                </div>
+		        <h2>ArcGIS Hub - Open Data Portal</h2>
+                <p>Take a look at our open data portal. A link is also provided below. </p>
+                <a href="https://ki-to-open-data-fleming.hub.arcgis.com/" class="buttonlink">Go to Portal</a>
+                <div><iframe class="linkFrame" src="https://ki-to-open-data-fleming.hub.arcgis.com/" title="Open Data Hub" height="600"></iframe></div>
+                <div class="containImage">
+                    <img src="image\OpenDataPortal.png" alt="Screenshot of Open Data Portal on ArcGIS Hub." class="responsive">
+                    <p class="containerText">Screenshot of Open Data Portal on ArcGIS Hub.</p>
+                </div>
+            </section>
+                <!--Back to Top Button-->
+                <div>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                </div>
+            <script src="script.js"></script> <!-- Call in script.js for functions-->
+            <script>
+        
+                // Get the button:
+                let mybutton = document.getElementById("myBtn");
+        
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function () { scrollFunction() };
+        
+            </script>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p class="tab" id="footer">Copyright &#169; Project 2305 - Ki to Open Data. All Right Reserved</p>
+        </footer>
+    </body>
+</html>

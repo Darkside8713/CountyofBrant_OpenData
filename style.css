@@ -575,3 +575,8 @@ display: block;
 .tab { 
   margin-left: 40px; 
 }
+.linkFrame {
+  padding-bottom: 50px;
+  border:none;
+  width:100%;
+}
