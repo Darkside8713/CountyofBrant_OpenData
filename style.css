@@ -498,8 +498,9 @@ display: block;
 }
 .image-container-row {
   display: grid;
-  justify-items: center;
-  justify-content: center;
+  justify-items: stretch;
+  justify-content: space-evenly;
+  align-content: center;
   grid-auto-flow: column;
   /* gap: 1em; */
 }
@@ -570,4 +571,7 @@ display: block;
 }
 .titleSpace {
   padding-top: 100px;
+}
+.tab { 
+  margin-left: 40px; 
 }
