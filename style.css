@@ -88,6 +88,13 @@ footer {
 .floatcenter{
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.floatcenter2{
+  display: flex;
+  justify-content: center;
 }
 
 .column1 {
