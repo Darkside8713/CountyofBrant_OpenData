@@ -222,6 +222,9 @@ nav .icon-burger .line {
 	nav .links a{
 		font-size: 20px;
 	}
+  nav .links li .dropdown-content {
+    position: relative;
+  }
 	nav :checked ~ .links {
 		/* bottom: 0; */
     width: 100%;
