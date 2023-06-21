@@ -90,6 +90,26 @@ footer {
   justify-content: center;
 }
 
+.column1 {
+  float: left;
+  width: 50%;
+}
+
+.left1 {
+  width: 75%;
+}
+
+.right1 {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .responsive{
    max-width: 100%;
   height:auto;
