@@ -576,6 +576,7 @@ display: block;
   margin-left: 40px; 
 }
 .linkFrame {
+  padding-top: 15px;
   padding-bottom: 50px;
   border:none;
   width:100%;
