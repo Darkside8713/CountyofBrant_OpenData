@@ -590,6 +590,6 @@ display: block;
 .rounded-link {
   border: 2px solid black;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
   background-color: lightblue;
 }
