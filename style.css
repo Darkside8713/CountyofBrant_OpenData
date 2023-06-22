@@ -587,3 +587,8 @@ display: block;
   border:none;
   width:100%;
 }
+.rounded-link {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
