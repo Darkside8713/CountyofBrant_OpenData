@@ -592,9 +592,11 @@ display: block;
   border-radius: 10px;
   padding: 10px;
   background-color: lightblue;
+  text-decoration: none;
 }
 
-.logoo {
+.logo {
   height: 20px;
+  width: 20px;
   margin-right: 5px;
 }
